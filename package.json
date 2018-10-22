@@ -1,6 +1,6 @@
 {
   "name": "travis-ci-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,10 +14,18 @@
     },
     "extends": "eslint:recommended",
     "rules": {
-      "arrow-body-style": ["warn", "always"],
-      "comma-dangle": ["warn", "never"],
+      "arrow-body-style": [
+        "warn",
+        "always"
+      ],
+      "comma-dangle": [
+        "warn",
+        "never"
+      ],
       "no-console": 0,
-      "no-unused-vars": ["warn"]
+      "no-unused-vars": [
+        "warn"
+      ]
     }
   },
   "author": "",
