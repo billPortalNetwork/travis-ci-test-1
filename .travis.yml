@@ -7,7 +7,6 @@ node_js:
 after_success:
   - |
     if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-      chmod +x release.sh
       ./release.sh
     else
       echo "This will not deploy!"
