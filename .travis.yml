@@ -7,7 +7,7 @@ node_js:
 after_success:
   - |
     if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-      echo "This will deploy!"
+      ./release.sh
     else
       echo "This will not deploy!"
     fi
