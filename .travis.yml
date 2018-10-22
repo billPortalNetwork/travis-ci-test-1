@@ -10,5 +10,5 @@ after_success:
       chmod +x release.sh
       ./release.sh
     else
-      echo "This will not deploy!"
+      echo "Not PR merge trigger"
     fi
