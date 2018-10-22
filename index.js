@@ -1,3 +1,3 @@
-var i = 1;
-i++;
-console.log(i);
+var arr = [];
+arr[2] = 1;
+console.log(arr);
