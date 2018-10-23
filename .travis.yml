@@ -8,4 +8,11 @@ jobs:
   include:
     - stage: deploy
       node_js: 6
-      script: ./release.sh
+      script:  
+        - |
+          if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
+            chmod +x release.sh
+            ./release.sh
+          else
+            echo "Not PR merge trigger"
+          fi
